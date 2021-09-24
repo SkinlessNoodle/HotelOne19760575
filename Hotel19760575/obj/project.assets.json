@@ -9194,11 +9194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\hotel1\\Hotel19760575\\Hotel19760575.csproj",
+      "projectUniqueName": "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj",
       "projectName": "Hotel19760575",
-      "projectPath": "C:\\git\\hotel1\\Hotel19760575\\Hotel19760575.csproj",
+      "projectPath": "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj",
       "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\hotel1\\Hotel19760575\\obj\\",
+      "outputPath": "C:\\git\\hotel2\\Hotel19760575\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
