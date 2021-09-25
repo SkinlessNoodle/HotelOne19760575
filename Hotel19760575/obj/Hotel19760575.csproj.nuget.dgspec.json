@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj": {}
+    "\\\\unix.scem.westernsydney.edu.au\\homes\\Documents\\GitHub\\HotelOne19760575\\Hotel19760575\\Hotel19760575.csproj": {}
   },
   "projects": {
-    "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj": {
+    "\\\\unix.scem.westernsydney.edu.au\\homes\\Documents\\GitHub\\HotelOne19760575\\Hotel19760575\\Hotel19760575.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj",
+        "projectUniqueName": "\\\\unix.scem.westernsydney.edu.au\\homes\\Documents\\GitHub\\HotelOne19760575\\Hotel19760575\\Hotel19760575.csproj",
         "projectName": "Hotel19760575",
-        "projectPath": "C:\\git\\hotel2\\Hotel19760575\\Hotel19760575.csproj",
-        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\hotel2\\Hotel19760575\\obj\\",
+        "projectPath": "\\\\unix.scem.westernsydney.edu.au\\homes\\Documents\\GitHub\\HotelOne19760575\\Hotel19760575\\Hotel19760575.csproj",
+        "packagesPath": "C:\\Users\\jkachappilly\\.nuget\\packages\\",
+        "outputPath": "\\\\unix.scem.westernsydney.edu.au\\homes\\Documents\\GitHub\\HotelOne19760575\\Hotel19760575\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jkachappilly\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
