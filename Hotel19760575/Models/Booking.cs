@@ -17,7 +17,6 @@ namespace Hotel19760575.Models
 
         // foreign key
         [Required]
-        [DataType(DataType.EmailAddress)]
         [EmailAddress]
         public string CustomerEmail { get; set; }
 
