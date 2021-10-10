@@ -1128,3 +1128,18 @@ C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Pro
 C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Details.cshtml.g.cs
 C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Edit.cshtml.g.cs
 C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Index.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Create.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Delete.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Details.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Edit.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Index.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Create.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Delete.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Details.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Edit.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\Index.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\Create.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\Delete.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\Details.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\Edit.cshtml.g.cs
+\\unix.scem.westernsydney.edu.au\homes\Documents\GitHub\HotelOne19760575\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\Index.cshtml.g.cs
