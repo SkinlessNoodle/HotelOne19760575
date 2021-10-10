@@ -14,7 +14,7 @@ namespace Hotel19760575.Models
         [DataType(DataType.EmailAddress)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public string Email { get; set; }
-
+        
         [Required, Display(Name = "Surname")]
         [RegularExpression(@"[A-Za-z'-]{2,20}")]
         public string Surname { get; set; }
