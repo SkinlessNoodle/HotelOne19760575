@@ -39,7 +39,7 @@ namespace Hotel19760575.Pages.Bookings
                 return NotFound();
             }
            ViewData["CustomerEmail"] = new SelectList(_context.Set<Customer>(), "Email", "Email");
-           ViewData["RoomID"] = new SelectList(_context.Room, "ID", "Level");
+           ViewData["RoomID"] = new SelectList(_context.Room, "ID", "ID");
             return Page();
         }
 
