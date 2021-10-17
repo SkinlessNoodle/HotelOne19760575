@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel19760575", "Hotel19760575.csproj", "{4FE403F4-32D4-4AF9-AB3C-847C19DA872F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel19760575", "Hotel19760575.csproj", "{4FE403F4-32D4-4AF9-AB3C-847C19DA872F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

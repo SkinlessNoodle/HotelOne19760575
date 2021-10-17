@@ -47,8 +47,8 @@ namespace Hotel19760575.Data
                 var createPowerUser = await UserManager.CreateAsync(poweruser, userPassword);
                 if (createPowerUser.Succeeded)
                 {
-                    // here we assign the new user the "Admin" role 
-                    await UserManager.AddToRoleAsync(poweruser, "Admin");
+                    // here we assign the new user the "Administrator" role 
+                    await UserManager.AddToRoleAsync(poweruser, "Administrator");
                 }
             }
         }

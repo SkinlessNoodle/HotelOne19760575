@@ -1381,3 +1381,4 @@ C:\git\hotel3\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.csproj.CopyCom
 C:\git\hotel3\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.dll
 C:\git\hotel3\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.pdb
 C:\git\hotel3\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.genruntimeconfig.cache
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Customers\MyDetails.cshtml.g.cs
