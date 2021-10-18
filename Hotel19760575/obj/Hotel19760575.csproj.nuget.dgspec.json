@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj": {}
+    "C:\\git\\hotel4\\Hotel19760575\\Hotel19760575.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj": {
+    "C:\\git\\hotel4\\Hotel19760575\\Hotel19760575.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj",
+        "projectUniqueName": "C:\\git\\hotel4\\Hotel19760575\\Hotel19760575.csproj",
         "projectName": "Hotel19760575",
-        "projectPath": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj",
-        "packagesPath": "C:\\Users\\aylin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\obj\\",
+        "projectPath": "C:\\git\\hotel4\\Hotel19760575\\Hotel19760575.csproj",
+        "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\hotel4\\Hotel19760575\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aylin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
