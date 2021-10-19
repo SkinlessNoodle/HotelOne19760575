@@ -1,0 +1,57 @@
+﻿@page
+@model Hotel19760575.Pages.Rooms.SearchRoomsModel
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="get">
+            <div class="form-group">
+                <label for="bedCount" class="control-label">Number of beds:</label>
+                <select name="bedCount" class="form-control" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="checkIn" class="control-label">Check in date:</label>
+                <input name="checkIn" class="form-control" type="date" required />
+            </div>
+
+            <div class="form-group">
+                <label for="checkOut" class="control-label">Check out date:</label>
+                <input name="checkOut" class="form-control" type="date" required />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<br/>
+<p>@ViewData["message"]</p>
+<br/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Level)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].BedCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room[0].Price)
+            </th>
+        </tr>
+    </thead>
+</table>
+
