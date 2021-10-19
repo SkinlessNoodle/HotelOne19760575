@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Bookings
 {
-
+    [Authorize(Roles = "Customer")]
     public class IndexModel : PageModel
     {
         private readonly Hotel19760575.Data.ApplicationDbContext _context;
@@ -37,16 +37,16 @@ namespace Hotel19760575.Pages.Bookings
             switch (sortOrder)
             {
                 case "date_asc":
-                    bookings = bookings.OrderBy(s => s.CheckIn);
+                    bookings = bookings.OrderBy(b => b.CheckIn.Date);
                     break;
                 case "date_desc":
-                    bookings = bookings.OrderByDescending(s => s.CheckIn);
+                    bookings = bookings.OrderByDescending(b => b.CheckIn.Date);
                     break;
                 case "price_asc":
-                    bookings = bookings.OrderBy(s => (double)s.Cost);
+                    bookings = bookings.OrderBy(b => (double)b.Cost);
                     break;
                 case "price_desc":
-                    bookings = bookings.OrderByDescending(s => (double)s.Cost);
+                    bookings = bookings.OrderByDescending(b => (double)b.Cost);
                     break;
             }
 
@@ -55,11 +55,11 @@ namespace Hotel19760575.Pages.Bookings
 
             string _email = User.FindFirst(ClaimTypes.Name).Value;
 
-            Booking = await _context.Booking
+            Booking = await bookings
                 .Include(b => b.TheCustomer)
-                .Where(s => s.CustomerEmail == _email)
+                .Where(b => b.CustomerEmail == _email)
                 .Include(b => b.TheRoom)
-                .AsNoTracking.ToListAsync();
+                .AsNoTracking().ToListAsync();
         }
     }
 }

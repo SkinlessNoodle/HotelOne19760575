@@ -1623,3 +1623,5 @@ C:\git\hotel4\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.Views.pdb
 C:\git\hotel4\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.csproj.CopyComplete
 C:\git\hotel4\Hotel19760575\obj\Debug\netcoreapp3.1\Hotel19760575.genruntimeconfig.cache
 C:\git\hotel4\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Statistics.cshtml.g.cs
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\Statistics.cshtml.g.cs
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Rooms\SearchRooms.cshtml.g.cs
