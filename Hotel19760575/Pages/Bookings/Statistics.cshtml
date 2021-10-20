@@ -7,8 +7,8 @@
 <br/>
 
 <h2>Customer distribution with respect to postcodes</h2>
-    <table class="table">
-
+<table class="table">
+    <thead>
         <tr>
             <th>
                 Postcode
@@ -17,24 +17,14 @@
                 Number of Customers
             </th>
         </tr>
-        @foreach (var item in Model.BookingStats)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Postcode)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CustomerCount)
-                </td>
-            </tr>
-        }
-
-    </table>
+    </thead>
+</table>
 
 <br/>
 
 <h2>"Booking distribution with respect to rooms</h2>
 <table class="table">
+    <thead>
         <tr>
             <th>
                 Room ID
@@ -43,16 +33,5 @@
                 Number of Bookings
             </th>
         </tr>
-        @foreach (var item in Model.BookingStats)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Room)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BookingCount)
-                </td>
-            </tr>
-        }
-    
+    </thead>
 </table>
