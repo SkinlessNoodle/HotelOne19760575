@@ -1,5 +1,5 @@
 ﻿@page
-@model Hotel19760575.Pages.Bookings.CreateModel
+@model Hotel19760575.Pages.Bookings.PeopleDiffModel
 
 @{
     ViewData["Title"] = "Create";
@@ -15,34 +15,29 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Booking.RoomID" class="control-label"></label>
-                <select asp-for="Booking.RoomID" class ="form-control" asp-items="ViewBag.RoomID"></select>
+                <label asp-for="BookingInput.RoomID" class="control-label"></label>
+                <select asp-for="BookingInput.RoomID" class ="form-control" asp-items="ViewBag.RoomID"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BookingInput.CheckIn" class="control-label"></label>
+                <input asp-for="BookingInput.CheckIn" class="form-control" />
+                <span asp-validation-for="BookingInput.CheckIn" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Booking.CustomerEmail" class="control-label"></label>
-                <select asp-for="Booking.CustomerEmail" class ="form-control" asp-items="ViewBag.CustomerEmail"></select>
+                <label asp-for="BookingInput.CheckOut" class="control-label"></label>
+                <input asp-for="BookingInput.CheckOut" class="form-control" />
+                <span asp-validation-for="BookingInput.CheckOut" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Booking.CheckIn" class="control-label"></label>
-                <input asp-for="Booking.CheckIn" class="form-control" />
-                <span asp-validation-for="Booking.CheckIn" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Booking.CheckOut" class="control-label"></label>
-                <input asp-for="Booking.CheckOut" class="form-control" />
-                <span asp-validation-for="Booking.CheckOut" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Booking.Cost" class="control-label"></label>
-                <input asp-for="Booking.Cost" class="form-control" />
-                <span asp-validation-for="Booking.Cost" class="text-danger"></span>
-            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
+
+<h2>@ViewData["DateDiff"]</h2>
 
 <div>
     <a asp-page="Index">Back to List</a>
