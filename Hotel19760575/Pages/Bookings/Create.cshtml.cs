@@ -37,7 +37,7 @@ namespace Hotel19760575.Pages.Bookings
         {
             // Get the options for the MovieGoer select list from the database
             // and save them in ViewData for passing to Content file
-            //ViewData["CustomerEmail"] = new SelectList(_context.Set<Customer>(), "Email", "Email");
+            ViewData["CustomerEmail"] = new SelectList(_context.Customer, "Email", "FullName");
             ViewData["RoomID"] = new SelectList(_context.Room, "ID", "ID");
             return Page();
         }
@@ -93,8 +93,8 @@ namespace Hotel19760575.Pages.Bookings
             Room room = new Room();
 
             // calculate the total price of this order **MAKE CHANGES TO CONVERT THE DATEDIFF TO INTEGER**
-            booking.Cost = dateDiff * theRoom.Price;
-            
+            //booking.Cost = dateDiff * theRoom.Price;
+            //booking.Cost = 10;
 
             ViewData["TotalPrice"] = booking.Cost;
 

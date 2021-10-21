@@ -16,5 +16,6 @@ namespace Hotel19760575.Data
         public DbSet<Hotel19760575.Models.Room> Room { get; set; }
         public DbSet<Hotel19760575.Models.Booking> Booking { get; set; }
         public DbSet<Hotel19760575.Models.Customer> Customer { get; set; }
+        public DbSet<Hotel19760575.Models.ManualBookingAdmin> ManualBookingAdmin { get; set; }
     }
 }

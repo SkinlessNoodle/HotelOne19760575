@@ -23,6 +23,11 @@ namespace Hotel19760575.Models
         [RegularExpression(@"[A-Za-z'-]{2,20}")]
         public string GivenName { get; set; }
 
+
+        [NotMapped]
+        public string FullName => $"{GivenName} {Surname}";
+
+
         [Required, Display(Name = "Postcode")]
         [RegularExpression(@"[0-9]{4}")]
         public string Postcode { get; set; }
