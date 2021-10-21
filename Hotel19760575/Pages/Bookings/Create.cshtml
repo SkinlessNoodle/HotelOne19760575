@@ -16,7 +16,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="BookingInput.RoomID" class="control-label"></label>
-                <select asp-for="BookingInput.RoomID" class ="form-control" asp-items="ViewBag.RoomID"></select>
+                <select asp-for="BookingInput.RoomID" class="form-control" asp-items="ViewBag.RoomID"></select>
             </div>
 
             <div class="form-group">
@@ -37,7 +37,35 @@
     </div>
 </div>
 
-<h2>@ViewData["DateDiff"]</h2>
+<h2>@ViewData["DateDiff"], @ViewData["TotalPrice"]</h2>
+
+@if (Model.SameDates != null)
+{
+
+
+    @if (Model.SameDates.Count == 0)
+    {
+
+        
+
+        <h5>You have successfully booked</h5>
+
+        <h4>Room ID: @ViewData["ID"]</h4>
+        <h4>Room Level: @ViewData["Level"]</h4>
+        <h4>Check IN: @ViewData["CIN"]</h4>
+        <h4>Check OUT: @ViewData["COUT"]</h4>
+        <h4>COST: @ViewData["TotalPrice"]</h4>
+
+
+    }
+    else
+    {
+<h5>hello mf</h5>
+
+    }
+
+}
+
 
 <div>
     <a asp-page="Index">Back to List</a>

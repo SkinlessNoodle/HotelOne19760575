@@ -9,7 +9,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="AdminManualBookings">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -58,9 +58,9 @@
                 @Html.DisplayFor(modelItem => item.Cost)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.CustomerEmail">Edit</a> |
+                <a asp-page="./Edit" asp-route-id="@item.BookingID">Edit</a> |
                 
-                <a asp-page="./Delete" asp-route-id="@item.CustomerEmail">Delete</a>
+                <a asp-page="./Delete" asp-route-id="@item.BookingID">Delete</a>
             </td>
         </tr>
         }

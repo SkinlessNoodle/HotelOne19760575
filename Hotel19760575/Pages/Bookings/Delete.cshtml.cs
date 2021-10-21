@@ -55,7 +55,7 @@ namespace Hotel19760575.Pages.Bookings
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./AdminManualIndex");
         }
     }
 }

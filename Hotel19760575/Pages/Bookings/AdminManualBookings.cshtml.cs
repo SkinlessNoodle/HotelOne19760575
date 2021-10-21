@@ -37,7 +37,7 @@ namespace Hotel19760575.Pages.Bookings
         {
             // Get the options for the MovieGoer select list from the database
             // and save them in ViewData for passing to Content file
-            ViewData["CustomerEmail"] = new SelectList(_context.Set<Customer>(), "Email", "Email");
+            ViewData["CustomerEmail"] = new SelectList(_context.Set<Customer>(), "Email", "FullName");
             ViewData["RoomID"] = new SelectList(_context.Room, "ID", "ID");
             return Page();
         }
@@ -85,7 +85,7 @@ namespace Hotel19760575.Pages.Bookings
             booking.RoomID = AdminInput.RoomID;
             booking.CheckIn = AdminInput.CheckIn;
             booking.CheckOut = AdminInput.CheckOut;
-            booking.CustomerEmail = customer.Email;
+            booking.CustomerEmail = AdminInput.CustomerEmail;
             booking.Cost = AdminInput.Cost;
 
             // retrieve the ordered magazine to get its price
