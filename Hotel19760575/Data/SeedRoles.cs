@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-//using Hotel19760575.Models; **will remove comment once Models are added in - only commented temporarily**
+using Hotel19760575.Models; 
 
 namespace Hotel19760575.Data
 {

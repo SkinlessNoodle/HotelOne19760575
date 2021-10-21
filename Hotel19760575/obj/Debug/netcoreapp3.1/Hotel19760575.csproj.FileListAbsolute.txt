@@ -1869,3 +1869,6 @@ C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Pro
 \\unix.scem.westernsydney.edu.au\homes\Desktop\The Project\Hotel19760575\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
 \\unix.scem.westernsydney.edu.au\homes\Desktop\The Project\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\AdminManualIndex.cshtml.g.cs
 \\unix.scem.westernsydney.edu.au\homes\Desktop\The Project\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\AdminManualBookings.cshtml.g.cs
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\AdminManualBookings.cshtml.g.cs
+C:\Users\aylin\Desktop\Uni Stuffs\Spring 2021\300583 Web Systems Development\Project\Github\Hotel19760575\obj\Debug\netcoreapp3.1\Razor\Pages\Bookings\AdminManualIndex.cshtml.g.cs

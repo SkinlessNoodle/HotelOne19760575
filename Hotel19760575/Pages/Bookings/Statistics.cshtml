@@ -1,6 +1,8 @@
 ﻿@page
 @model Hotel19760575.Pages.Bookings.StatisticsModel
 @{
+    ViewData["Title"] = "CalcSubscriptionStats";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 <h1>Statistics</h1>
 
@@ -8,7 +10,6 @@
 
 <h2>Customer distribution with respect to postcodes</h2>
 <table class="table">
-    <thead>
         <tr>
             <th>
                 Postcode
@@ -17,14 +18,22 @@
                 Number of Customers
             </th>
         </tr>
-    </thead>
+        @foreach (var item in Model.CustomerStatistic)
+        {  <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Postcode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumOfCustomers)
+                </td>
+            </tr>
+        }
 </table>
 
 <br/>
 
-<h2>"Booking distribution with respect to rooms</h2>
+<h2>Booking distribution with respect to rooms</h2>
 <table class="table">
-    <thead>
         <tr>
             <th>
                 Room ID
@@ -33,5 +42,16 @@
                 Number of Bookings
             </th>
         </tr>
-    </thead>
+        <tr>
+            @foreach (var item in Model.BookingStatistic)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RoomID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumOfBookings)
+                </td>
+            </tr>
+        }
 </table>
