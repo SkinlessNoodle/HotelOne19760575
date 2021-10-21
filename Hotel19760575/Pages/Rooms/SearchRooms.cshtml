@@ -7,10 +7,10 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form method="get">
+        <form method="post">
             <div class="form-group">
-                <label for="bedCount" class="control-label">Number of beds:</label>
-                <select name="bedCount" class="form-control" required>
+                <label for="bedCount" asp-for="room.BedCount" class="control-label">Number of beds:</label>
+                <select name="bedCount" asp-for="room.BedCount" class="form-control" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -19,13 +19,13 @@
             </div>
 
             <div class="form-group">
-                <label for="checkIn" class="control-label">Check in date:</label>
-                <input name="checkIn" class="form-control" type="date" required />
+                <label for="checkIn" asp-for="booking.CheckIn" class="control-label">Check in date:</label>
+                <input name="checkIn" asp-for="booking.CheckIn" class="form-control" type="date" required />
             </div>
 
             <div class="form-group">
-                <label for="checkOut" class="control-label">Check out date:</label>
-                <input name="checkOut" class="form-control" type="date" required />
+                <label for="checkOut" asp-for="booking.CheckOut" class="control-label">Check out date:</label>
+                <input name="checkOut" asp-for="booking.CheckOut" class="form-control" type="date" required />
             </div>
 
             <div class="form-group">
@@ -35,9 +35,7 @@
     </div>
 </div>
 
-<br/>
-<p>@ViewData["message"]</p>
-<br/>
+<br />
 
 <table class="table">
     <thead>
@@ -53,5 +51,26 @@
             </th>
         </tr>
     </thead>
+    <tbody>
+        @if ((String)ViewData["posted"] == "true")
+        {
+            @foreach (var item in Model.Room)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Level)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.BedCount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
 </table>
+
 
