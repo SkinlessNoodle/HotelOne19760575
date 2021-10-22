@@ -19,7 +19,7 @@
                 <select asp-for="AdminInput.RoomID" class="form-control" asp-items="ViewBag.RoomID"></select>
             </div>
             <div class="form-group">
-                <label asp-for="AdminInput.CustomerEmail" class="control-label"></label>
+                <label asp-for="AdminInput.CustomerEmail" class="control-label">Customer Full-Name</label>
                 <select asp-for="AdminInput.CustomerEmail" class="form-control" asp-items="ViewBag.CustomerEmail"></select>
             </div>
 
@@ -52,18 +52,16 @@
     @if (Model.SameDates.Count != 0)
     {
 
-        <h5>Unfortunetly the dates you have chosen for the room is currently unavailable!</h5>
+        <h5>Unfortunately the dates you have chosen for the room is currently unavailable!</h5>
         <h6>
             Please click on this booking link: <strong><a asp-page="AdminManualBookings">Book A Room</a></strong>
             and kindly choose another date for that room
         </h6>
-
-    }
-   
+    }   
 }
 
 <div>
-    <a asp-page="AdminManualIndex">Back to List</a>
+    <a asp-page="ManageBookingsIndex">Back to List</a>
 </div>
 
 @section Scripts {

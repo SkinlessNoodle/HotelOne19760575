@@ -16,7 +16,7 @@ namespace Hotel19760575.Data
             var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var UserManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
             // Include your role names here
-            string[] roleNames = { "Administrator", "Customer" };
+            string[] roleNames = { "Admin", "Customer" };
             IdentityResult roleResult;
 
             foreach (var roleName in roleNames)
@@ -48,7 +48,7 @@ namespace Hotel19760575.Data
                 if (createPowerUser.Succeeded)
                 {
                     // here we assign the new user the "Administrator" role 
-                    await UserManager.AddToRoleAsync(poweruser, "Administrator");
+                    await UserManager.AddToRoleAsync(poweruser, "Admin");
                 }
             }
         }

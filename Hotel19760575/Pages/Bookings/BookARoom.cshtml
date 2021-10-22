@@ -1,8 +1,8 @@
 ﻿@page
-@model Hotel19760575.Pages.Bookings.PeopleDiffModel
+@model Hotel19760575.Pages.Bookings.DateDiffModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Book a Room";
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
@@ -48,15 +48,15 @@
 
         <h5>Room ID: @ViewData["ID"]</h5>
         <h5>Room Level: @ViewData["Level"]</h5>
-        <h5>Check IN: @ViewData["CIN"]</h5>
-        <h5>Check OUT: @ViewData["COUT"]</h5>
+        <h5>Check-In: @ViewData["CIN"]</h5>
+        <h5>Check-Out: @ViewData["COUT"]</h5>
         <h5>Total Cost: @ViewData["TotalPrice"]</h5>
 
     }
     else
     {
-        <h5>Unfortunetly the dates you have chosen for the room is currently unavailable!</h5>
-        <h6>Please click on this booking link: <strong><a asp-page="Create">Book A Room</a></strong> 
+        <h5>Unfortunately the dates you have chosen for the room is currently unavailable!</h5>
+        <h6>Please click on this booking link: <strong><a asp-page="BookARoom">Book A Room</a></strong> 
             and kindly choose another date for that room</h6>
 
     }

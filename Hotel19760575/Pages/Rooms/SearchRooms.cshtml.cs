@@ -8,11 +8,13 @@ using Microsoft.EntityFrameworkCore;
 using Hotel19760575.Data;
 using Hotel19760575.Models;
 using Microsoft.Data.Sqlite;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Rooms
 {
+    [Authorize(Roles = "Customer")]
     public class SearchRoomsModel : PageModel
-    {
+    {      
         //creates objects
         public IList<Room> Room { get; set; }
 

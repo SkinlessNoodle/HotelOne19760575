@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Hotel19760575.Models;
 using System.Security.Claims;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Bookings
 
@@ -108,7 +109,7 @@ namespace Hotel19760575.Pages.Bookings
                 _context.Booking.Add(booking);
                 await _context.SaveChangesAsync();
                 
-                return RedirectToPage("./AdminManualIndex");
+                return RedirectToPage("./ManageBookingsIndex");
                 
             }
     

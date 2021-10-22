@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Hotel19760575.Data;
 using Hotel19760575.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Bookings
 {
@@ -70,7 +71,7 @@ namespace Hotel19760575.Pages.Bookings
                 }
             }
 
-            return RedirectToPage("./AdminManualIndex");
+            return RedirectToPage("./ManageBookingsIndex");
         }
 
         private bool BookingExists(int id)

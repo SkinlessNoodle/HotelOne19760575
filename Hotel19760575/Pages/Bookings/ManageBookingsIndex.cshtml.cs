@@ -7,11 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Hotel19760575.Data;
 using Hotel19760575.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Bookings
 {
     public class AdminManualIndex : PageModel
-    {
+    {       
         private readonly Hotel19760575.Data.ApplicationDbContext _context;
 
         public AdminManualIndex(Hotel19760575.Data.ApplicationDbContext context)

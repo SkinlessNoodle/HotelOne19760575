@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Hotel19760575.Data;
 using Hotel19760575.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Hotel19760575.Pages.Bookings
 {
@@ -55,7 +56,7 @@ namespace Hotel19760575.Pages.Bookings
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./AdminManualIndex");
+            return RedirectToPage("./ManageBookingsIndex");
         }
     }
 }

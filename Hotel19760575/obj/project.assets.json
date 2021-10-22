@@ -9194,19 +9194,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jkachappilly\\.nuget\\packages\\": {}
+    "C:\\Users\\aylin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\unix.scem.westernsydney.edu.au\\homes\\Desktop\\The Project\\Hotel19760575\\Hotel19760575.csproj",
+      "projectUniqueName": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj",
       "projectName": "Hotel19760575",
-      "projectPath": "\\\\unix.scem.westernsydney.edu.au\\homes\\Desktop\\The Project\\Hotel19760575\\Hotel19760575.csproj",
-      "packagesPath": "C:\\Users\\jkachappilly\\.nuget\\packages\\",
-      "outputPath": "\\\\unix.scem.westernsydney.edu.au\\homes\\Desktop\\The Project\\Hotel19760575\\obj\\",
+      "projectPath": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\Hotel19760575.csproj",
+      "packagesPath": "C:\\Users\\aylin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aylin\\Desktop\\Uni Stuffs\\Spring 2021\\300583 Web Systems Development\\Project\\Github\\Hotel19760575\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jkachappilly\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aylin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9281,7 +9281,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
