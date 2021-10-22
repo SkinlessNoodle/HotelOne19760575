@@ -46,7 +46,22 @@
     </div>
 </div>
 
-<h2>@ViewData["DateDiff"]</h2>
+@if (Model.SameDates != null)
+{
+
+    @if (Model.SameDates.Count != 0)
+    {
+
+        <h5>Unfortunetly the dates you have chosen for the room is currently unavailable!</h5>
+        <h5>
+            Please click on this booking link:<strong><a asp-page="Create">Book A Room</a></strong>
+            and kindly choose another date for that room
+        </h5>
+
+
+    }
+   
+}
 
 <div>
     <a asp-page="AdminManualIndex">Back to List</a>

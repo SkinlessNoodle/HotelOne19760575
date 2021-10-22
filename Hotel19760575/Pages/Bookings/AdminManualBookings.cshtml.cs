@@ -53,22 +53,15 @@ namespace Hotel19760575.Pages.Bookings
             // prepare the parameters to be inserted into the query
             var CustomerCheckIn = new SqliteParameter("CheckIn", AdminInput.CheckIn);
             var CustomerCheckOut = new SqliteParameter("CheckOut", AdminInput.CheckOut);
+            var RoomID = new SqliteParameter("RoomID", AdminInput.RoomID);
+
 
 
             // Construct the query to get the movies watched by Moviegoer A but not Moviegoer B
             // Use placeholders as the parameters
-            var sameDates = _context.Booking.FromSqlRaw("SELECT * FROM Booking INNER JOIN Room ON Booking.RoomID = Room.ID "
-                + "WHERE @CheckIn < Booking.CheckOut AND Booking.CheckIn < @CheckOut", CustomerCheckIn, CustomerCheckOut);
+            var sameDates = _context.Booking.FromSqlRaw("SELECT * FROM Booking INNER JOIN Room ON Booking.RoomID = Room.ID WHERE Booking.RoomID = @RoomID AND"
++ "@CheckIn < Booking.CheckOut AND Booking.CheckIn < @CheckOut", RoomID, CustomerCheckIn, CustomerCheckOut);
 
-
-
-            /* "select [Movie].* from [Movie] inner join [Order] on "
-                              + "[Movie].ID = [Order].MovieID where [Order].MovieGoerEmail = @CheckIn and "
-                              + "[Movie].ID not in (select [Movie].ID from [Movie] inner join [Order] on "
-                              + "[Movie].ID = [Order].MovieID where [Order].MovieGoerEmail = @CheckOut)"
-            */
-
-            //.Select(mo => new Movie { ID = mo.ID, Genre = mo.Genre, Price = mo.Price, ReleaseDate = mo.ReleaseDate, Title = mo.Title });
 
             // Run the query and save the results in DiffMovies for passing to content file
             SameDates = await sameDates.ToListAsync();
@@ -76,7 +69,7 @@ namespace Hotel19760575.Pages.Bookings
             //ViewData["MovieGoerList"] = new SelectList(_context.MovieGoer, "Email", "FullName");
             // invoke the content file
 
-            var dateDiff = AdminInput.CheckOut.Date - AdminInput.CheckIn.Date;
+            var dateDiff = AdminInput.CheckOut.Date.Day - AdminInput.CheckIn.Date.Day;
 
             ViewData["DateDiff"] = dateDiff;
 
@@ -94,17 +87,20 @@ namespace Hotel19760575.Pages.Bookings
             Room room = new Room();
 
             // calculate the total price of this order **MAKE CHANGES TO CONVERT THE DATEDIFF TO INTEGER**
-            //booking.Cost = dateDiff * theRoom.Price;
+            booking.Cost = dateDiff * theRoom.Price;
             //booking.Cost = 10;
 
+            ViewData["ID"] = booking.RoomID;
+            ViewData["Level"] = theRoom.Level;
+            ViewData["CIN"] = booking.CheckIn;
+            ViewData["COUT"] = booking.CheckOut;
             ViewData["TotalPrice"] = booking.Cost;
+            //ViewData["Name"] = 
 
             _context.Booking.Add(booking);
             await _context.SaveChangesAsync();
 
-
-
-            return Page();
+            return RedirectToPage("./AdminManualIndex");
         }
     }
 }

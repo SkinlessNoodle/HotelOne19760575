@@ -37,30 +37,27 @@
     </div>
 </div>
 
-<h2>@ViewData["DateDiff"], @ViewData["TotalPrice"]</h2>
-
 @if (Model.SameDates != null)
 {
 
-
     @if (Model.SameDates.Count == 0)
     {
+        <h4>Congratulations @ViewData["Name"]! You have successfully reserved a booking at Goma Hotel!</h4>
+        <br />
+        <h4><strong>The Details of the booking are listed below:</strong></h4>
 
-        
-
-        <h5>You have successfully booked</h5>
-
-        <h4>Room ID: @ViewData["ID"]</h4>
-        <h4>Room Level: @ViewData["Level"]</h4>
-        <h4>Check IN: @ViewData["CIN"]</h4>
-        <h4>Check OUT: @ViewData["COUT"]</h4>
-        <h4>COST: @ViewData["TotalPrice"]</h4>
-
+        <h5>Room ID: @ViewData["ID"]</h5>
+        <h5>Room Level: @ViewData["Level"]</h5>
+        <h5>Check IN: @ViewData["CIN"]</h5>
+        <h5>Check OUT: @ViewData["COUT"]</h5>
+        <h5>Total Cost: @ViewData["TotalPrice"]</h5>
 
     }
     else
     {
-<h5>hello mf</h5>
+        <h5>Unfortunetly the dates you have chosen for the room is currently unavailable!</h5>
+        <h5>Please click on this booking link:<strong><a asp-page="Create">Book A Room</a></strong> 
+            and kindly choose another date for that room</h5>
 
     }
 

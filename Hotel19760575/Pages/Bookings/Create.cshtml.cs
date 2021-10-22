@@ -83,9 +83,6 @@ namespace Hotel19760575.Pages.Bookings
             booking.CheckOut = BookingInput.CheckOut;
             booking.CustomerEmail = customer.Email;
             
-
-           
-
             // retrieve the ordered magazine to get its price
             var theRoom = await _context.Room.FindAsync(BookingInput.RoomID);
 
@@ -100,11 +97,10 @@ namespace Hotel19760575.Pages.Bookings
             ViewData["CIN"] = booking.CheckIn;
             ViewData["COUT"] = booking.CheckOut;
             ViewData["TotalPrice"] = booking.Cost;
+            //ViewData["Name"] = 
 
             _context.Booking.Add(booking);
             await _context.SaveChangesAsync();
-
-
 
             return Page();
         }

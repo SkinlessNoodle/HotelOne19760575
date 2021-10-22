@@ -14,6 +14,41 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
+            Room Level
+            <!-- Html.DisplayNameFor(model => model.Booking.TheRoom) -->
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Booking.TheRoom.Level)
+        </dd>
+        <dt class="col-sm-2">
+            Room ID
+            <!-- Html.DisplayNameFor(model => model.Booking.TheRoom) -->
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Booking.RoomID)
+        </dd>
+        <dt class="col-sm-2">
+            Bed Count
+            <!-- Html.DisplayNameFor(model => model.Booking.TheRoom) -->
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Booking.TheRoom.BedCount)
+        </dd>
+        <dt class="col-sm-2">
+            Surname
+            <!-- Html.DisplayNameFor(model => model.Booking.TheRoom) -->
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Booking.TheCustomer.Surname)
+        </dd>
+        <dt class="col-sm-2">
+            Given Name
+            <!-- Html.DisplayNameFor(model => model.Booking.TheRoom) -->
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Booking.TheCustomer.GivenName)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Booking.CheckIn)
         </dt>
         <dd class="col-sm-10">
@@ -30,18 +65,6 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Booking.Cost)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Booking.TheRoom)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Booking.TheRoom.Level)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Booking.TheCustomer)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Booking.TheCustomer.Email)
         </dd>
     </dl>
     
