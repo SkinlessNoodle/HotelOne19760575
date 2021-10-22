@@ -87,20 +87,31 @@ namespace Hotel19760575.Pages.Bookings
             Room room = new Room();
 
             // calculate the total price of this order **MAKE CHANGES TO CONVERT THE DATEDIFF TO INTEGER**
-            booking.Cost = dateDiff * theRoom.Price;
+            decimal enterCost = booking.Cost;
             //booking.Cost = 10;
 
             ViewData["ID"] = booking.RoomID;
             ViewData["Level"] = theRoom.Level;
             ViewData["CIN"] = booking.CheckIn;
             ViewData["COUT"] = booking.CheckOut;
-            ViewData["TotalPrice"] = booking.Cost;
+            ViewData["TotalPrice"] = enterCost;
             //ViewData["Name"] = 
 
-            _context.Booking.Add(booking);
-            await _context.SaveChangesAsync();
 
-            return RedirectToPage("./AdminManualIndex");
+            if(SameDates.Count != 0)
+            {
+                //return RedirectToPage("./AdminManualBookings");
+                return Page();
+            }
+            else
+            {
+                _context.Booking.Add(booking);
+                await _context.SaveChangesAsync();
+                
+                return RedirectToPage("./AdminManualIndex");
+                
+            }
+    
         }
     }
 }

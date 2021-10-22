@@ -99,10 +99,20 @@ namespace Hotel19760575.Pages.Bookings
             ViewData["TotalPrice"] = booking.Cost;
             //ViewData["Name"] = 
 
-            _context.Booking.Add(booking);
-            await _context.SaveChangesAsync();
+            if (SameDates.Count == 0)
+            {
+                _context.Booking.Add(booking);
+                await _context.SaveChangesAsync();
+                
+                return Page();
+            }
+            else
+            {
 
-            return Page();
+                return Page();
+
+
+            }
         }
     }
 }
